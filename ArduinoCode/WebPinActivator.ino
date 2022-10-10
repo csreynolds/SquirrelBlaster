@@ -3,8 +3,8 @@
 
 #include <WiFiNINA.h>
 
-char ssid[] = "MomsSpaghetti";             //  your network SSID (name) between the " "
-char pass[] = "passwordispassword";      // your network password between the " "
+char ssid[] = "XXXXXXXX";         //  your network SSID (name) between the " "
+char pass[] = "xxxxxxxx";         // your network password between the " "
 int keyIndex = 0;                 // your network key Index number (needed only for WEP)
 int status = WL_IDLE_STATUS;      //connection status
 WiFiServer server(80);            //server socket
