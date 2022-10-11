@@ -41,6 +41,7 @@ void setup() {
   pinMode(servoPin, OUTPUT);
   // Set outputs to LOW
   digitalWrite(servoPin, LOW);
+  WiFi.setHostname("SquirrelBlaster");
 
   // Connect to Wi-Fi network with SSID and password
   Serial.print("Connecting to ");
@@ -55,6 +56,8 @@ void setup() {
   Serial.println("WiFi connected.");
   Serial.println("IP address: ");
   Serial.println(WiFi.localIP());
+  Serial.print("RRSI: ");
+  Serial.println(WiFi.RSSI());
   server.begin();
 }
 
